@@ -75,7 +75,7 @@ public class RubyController : MonoBehaviour
 			RaycastHit2D tHit = Physics2D.Raycast( gRigidbody2d.position + Vector2.up * 0.2f, gLookDirection, 1.5f, LayerMask.GetMask( "NPC" ) );
 			if ( tHit.collider != null )
 			{
-				//Debug.Log( "Raycast has hit the object " + tHit.collider.gameObject );
+				Debug.Log( "Raycast has hit the object " + tHit.collider.gameObject );
 				if ( tHit.collider != null )
 				{
 					NonPlayerCharacter tCharacter = tHit.collider.GetComponent<NonPlayerCharacter>();
