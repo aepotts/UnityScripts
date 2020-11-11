@@ -7,13 +7,15 @@ using System;
 
 public class DialogDataScriptableObject : ScriptableObject
 {
+	
+	int gNumberOfCharacters = 4;
 
 	// Think of a better way to pass in dialog option later //
 	public string GetDialogText( string iCharacter, int iDialogOption )
 	{
-		string[] NameArray = new string[] { "JAMBI", "EVILJAMBI", "OLIVER" };
+		string[] NameArray = new string[] { "JAMBI", "EVILJAMBI", "OLIVER", "CROW" };
 	
-		string[][] JaggedQuoteArray = new string[3][];
+		string[][] JaggedQuoteArray = new string[gNumberOfCharacters][];
 	
 		string[] JambiQuoteArray = new string[] { 
 			"Oh dear, the robots are on the fritz again.",
@@ -30,10 +32,16 @@ public class DialogDataScriptableObject : ScriptableObject
 			"Uh, I mean meow..."
 		};
 		
+		string[] CrowQuoteArray = new string[] {
+			"*This crow doesn't seem to be able to talk yet.*",
+			"..."
+		};
+		
 		// Build jagged array with different character quote arrays //
 		JaggedQuoteArray[0] = JambiQuoteArray;
 		JaggedQuoteArray[1] = EvilJambiQuoteArray;
 		JaggedQuoteArray[2] = OliverQuoteArray;
+		JaggedQuoteArray[3] = CrowQuoteArray;
 		
 		// Find which array to use from iCharacter
 		int tIndex = Array.IndexOf( NameArray, iCharacter );

@@ -6,16 +6,16 @@ public class NonPlayerCharacter : MonoBehaviour
 {
 	// Dialog
 	public DialogDataScriptableObject gDialogOptions;
-	string gOutputText;
+	protected string gOutputText;
 	
 	public GameObject pDialogBox;
 	public GameObject pDialogIcon;
 	
 	public float pDisplayTime = 4.0f;
-	float gTimerDisplay;
+	protected float gTimerDisplay;
 	
 	public string gCharacter;				// Defined in MainDialogIcon.cs //
-	string gOutputIcon;						// For now, these should be the same
+	protected string gOutputIcon;						// For now, these should be the same
 	
     // Start is called before the first frame update //
     void Start()
@@ -64,7 +64,7 @@ public class NonPlayerCharacter : MonoBehaviour
 		MainDialogIcon.instance.SetIcon( gOutputIcon );
 	}
 	
-	void SetDialogActive( bool iState )
+	protected void SetDialogActive( bool iState )
 	{
 		pDialogBox.SetActive( iState );
 		pDialogIcon.SetActive( iState );

@@ -32,6 +32,8 @@ public class MainDialogIcon : MonoBehaviour
 		gCharacters = new List<string>();
 		gCharacters.Add( "JAMBI" );
 		gCharacters.Add( "EVILJAMBI" );
+		gCharacters.Add( "OLIVER" );
+		gCharacters.Add( "CROW" );
 	}
 	
 	void Update()

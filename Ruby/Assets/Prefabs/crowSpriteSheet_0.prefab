@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6889037455944519377}
   - component: {fileID: 6889037455944519376}
   - component: {fileID: 6889037455944519375}
+  - component: {fileID: 5641649221593860795}
   m_Layer: 0
   m_Name: crowSpriteSheet_0
   m_TagString: Untagged
@@ -102,3 +103,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5641649221593860795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889037455944519374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70de6322b551f264c97adf21417d45df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gDialogOptions: {fileID: 11400000, guid: bb430488910940d43856377274324362, type: 2}
+  pDialogBox: {fileID: 0}
+  pDialogIcon: {fileID: 0}
+  pDisplayTime: 4
+  gCharacter: 
+  gSpeed: 0
+  gVertical: 0
+  cChangeTime: 3
