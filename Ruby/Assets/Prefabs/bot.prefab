@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: -8621349116481314793}
   - component: {fileID: 3106580021335066070}
   - component: {fileID: 9057091703737088004}
-  - component: {fileID: 7030527031917913609}
   m_Layer: 0
   m_Name: bot
   m_TagString: Untagged
@@ -266,21 +265,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7030527031917913609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2212521597604468329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c73d5351c20eb0b4ba7e6b03e50a081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gBadGuy: {fileID: 2212521597604468329}
-  gSpawnManagerValues: {fileID: 11400000, guid: b51cf54ac3363a6468c8bff3a9cbd548,
-    type: 2}
 --- !u!1001 &1018668019320621335
 PrefabInstance:
   m_ObjectHideFlags: 0
